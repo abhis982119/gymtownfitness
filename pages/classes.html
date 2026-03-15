@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training | GymTownFitness</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .training-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:3px;margin-top:60px}
+    .training-card{background:var(--dark2);overflow:hidden}
+    .training-card-img{height:240px;overflow:hidden}
+    .training-card-img img{width:100%;height:100%;object-fit:cover;filter:brightness(0.65);transition:transform 0.55s,filter 0.4s}
+    .training-card:hover .training-card-img img{transform:scale(1.06);filter:brightness(0.4)}
+    .training-card-body{padding:28px 30px}
+    .tc-tag{font-family:var(--heading);font-size:10px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .tc-name{font-family:var(--heading);font-size:22px;font-weight:600;text-transform:uppercase;margin-bottom:10px}
+    .tc-desc{font-size:13px;color:var(--gray);line-height:1.75;font-weight:300;margin-bottom:18px}
+    .tc-meta{display:flex;flex-wrap:wrap;gap:16px}
+    .tc-m{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+    .tc-m b{color:var(--accent)}
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <a href="../index.html" class="logo">GymTown<span>Fitness</span></a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a><a href="about.html">About</a>
+    <a href="classes.html" class="active">Training</a><a href="timetable.html">Timetable</a>
+    <a href="trainers.html">Trainers</a><a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a><a href="contact.html" class="nav-cta">Join Now</a>
+  </div>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-bg" style="background-image:url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=80')"></div>
+  <div class="container page-header-inner">
+    <div class="eyebrow">Training Programs</div>
+    <h1 class="section-title">Our <span class="text-accent">Classes</span></h1>
+    <p class="section-sub">From beginner to elite — every class is designed to maximise results and keep you coming back for more.</p>
+  </div>
+</div>
+
+<section class="section-pad" style="background:var(--black)">
+  <div class="container">
+    <div class="training-grid">
+      <div class="training-card reveal"><div class="training-card-img"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80" alt="Weightlifting" loading="lazy"/></div><div class="training-card-body"><div class="tc-tag">Strength</div><div class="tc-name">Weightlifting</div><p class="tc-desc">Master the snatch, clean &amp; jerk, and progressive overload principles. Build the foundation of real strength with guided barbell work.</p><div class="tc-meta"><div class="tc-m"><b>60 min</b></div><div class="tc-m">All Levels</div><div class="tc-m">Max 12 members</div></div></div></div>
+      <div class="training-card reveal"><div class="training-card-img"><img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600&q=80" alt="Cardio HIIT" loading="lazy"/></div><div class="training-card-body"><div class="tc-tag">Endurance</div><div class="tc-name">Cardio HIIT</div><p class="tc-desc">High-intensity interval training designed to maximise calorie burn and cardiovascular fitness in minimum time. Science-backed intervals.</p><div class="tc-meta"><div class="tc-m"><b>45 min</b></div><div class="tc-m">Intermediate</div><div class="tc-m">Max 20 members</div></div></div></div>
+      <div class="training-card reveal"><div class="training-card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Functional Training" loading="lazy"/></div><div class="training-card-body"><div class="tc-tag">Functional</div><div class="tc-name">Functional Training</div><p class="tc-desc">Multi-plane compound movements that build real-world strength. Kettlebells, battle ropes, TRX and more in structured circuits.</p><div class="tc-meta"><div class="tc-m"><b>50 min</b></div><div class="tc-m">All Levels</div><div class="tc-m">Max 15 members</div></div></div></div>
+      <div class="training-card reveal"><div class="training-card-img"><img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=600&q=80" alt="Personal Training" loading="lazy"/></div><div class="training-card-body"><div class="tc-tag">1-on-1</div><div class="tc-name">Personal Training</div><p class="tc-desc">Completely bespoke sessions with a dedicated trainer. Custom programming, real-time form correction and accelerated progress tracking.</p><div class="tc-meta"><div class="tc-m"><b>60 min</b></div><div class="tc-m">All Levels</div><div class="tc-m">1-on-1</div></div></div></div>
+      <div class="training-card reveal"><div class="training-card-img"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80" alt="Aerobics" loading="lazy"/></div><div class="training-card-body"><div class="tc-tag">Group</div><div class="tc-name">Aerobics</div><p class="tc-desc">Energetic group fitness with choreographed routines. Burns fat, builds coordination and is genuinely the most fun you can have at the gym.</p><div class="tc-meta"><div class="tc-m"><b>50 min</b></div><div class="tc-m">Beginner</div><div class="tc-m">Max 25 members</div></div></div></div>
+      <div class="training-card reveal"><div class="training-card-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Yoga" loading="lazy"/></div><div class="training-card-body"><div class="tc-tag">Flexibility</div><div class="tc-name">Yoga &amp; Stretch</div><p class="tc-desc">Mobility, recovery and mental clarity. Essential for serious athletes and anyone looking to move better and feel stronger every day.</p><div class="tc-meta"><div class="tc-m"><b>60 min</b></div><div class="tc-m">All Levels</div><div class="tc-m">Max 15 members</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2 class="reveal">Book A <span class="text-accent">Free Session</span></h2>
+  <p class="reveal">Try any class for free. Contact us to book your taster session today.</p>
+  <a href="contact.html" class="btn btn-red reveal">Book Now</a>
+</section>
+
+<footer><div class="container"><div class="foot-top"><div class="foot-brand"><div class="logo">GymTown<span>Fitness</span></div><p>A place where champions are built.</p></div><div class="foot-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="classes.html">Training</a></li><li><a href="pricing.html">Pricing</a></li></ul></div><div class="foot-col"><h4>Support</h4><ul><li><a href="trainers.html">Trainers</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Privacy Policy</a></li></ul></div><div class="foot-col"><h4>Contact</h4><ul><li><a href="tel:+911234567890">+91 123 456 7890</a></li><li><a href="mailto:info@GymTownness.in">info@GymTownness.in</a></li></ul></div></div><div class="foot-bottom"><p>&copy; 2025 GymTown. All rights reserved.</p></div></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
